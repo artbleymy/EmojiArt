@@ -40,8 +40,8 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        scrollViewHeight.constant = scrollView.contentSize.height
-        scrollViewWidth.constant = scrollView.contentSize.width
+        scrollViewHeight?.constant = scrollView.contentSize.height
+        scrollViewWidth?.constant = scrollView.contentSize.width
     }
     
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
