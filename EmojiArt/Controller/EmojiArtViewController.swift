@@ -165,6 +165,22 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate, UIScr
                     coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
                     
                 }
+            } else {
+                let placeholderContext = coordinator.drop(item.dragItem,
+                                                          to: UICollectionViewDropPlaceholder(insertionIndexPath: destinationIndexPath, reuseIdentifier: "DropPlaceholderCell"))
+                item.dragItem.itemProvider.loadObject(ofClass: NSAttributedString.self) { (provider, error) in
+                    DispatchQueue.main.async {
+                        if let attributedString = provider as? NSAttributedString{
+                            placeholderContext.commitInsertion(dataSourceUpdates: { (insetrionIndexPath) in
+                                self.emojis.insert(attributedString.string, at: insetrionIndexPath.item)
+                            })
+                        } else {
+                            placeholderContext.deletePlaceholder()
+                        }
+                        
+                    }
+                }
+                
             }
         }
     }
