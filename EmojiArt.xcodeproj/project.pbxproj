@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8589C6A32242630600EA1FFE /* TextFieldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8589C6A22242630600EA1FFE /* TextFieldCollectionViewCell.swift */; };
 		85C15477223BF297007AB77A /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C15476223BF297007AB77A /* EmojiCollectionViewCell.swift */; };
 		85C15479223C1DF0007AB77A /* EmojiArtView+Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C15478223C1DF0007AB77A /* EmojiArtView+Gestures.swift */; };
 		85EA3BFC2239727600A20D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA3BFB2239727600A20D6B /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8589C6A22242630600EA1FFE /* TextFieldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCollectionViewCell.swift; sourceTree = "<group>"; };
 		85C15476223BF297007AB77A /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		85C15478223C1DF0007AB77A /* EmojiArtView+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiArtView+Gestures.swift"; sourceTree = "<group>"; };
 		85EA3BF82239727600A20D6B /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				85EA3C1722398D6B00A20D6B /* EmojiArtDocumentTableViewController.swift */,
+				8589C6A22242630600EA1FFE /* TextFieldCollectionViewCell.swift */,
 				85EA3C132239735A00A20D6B /* EmojiArtView.swift */,
 				85C15478223C1DF0007AB77A /* EmojiArtView+Gestures.swift */,
 				85EA3C11223972CD00A20D6B /* EmojiArtViewController.swift */,
@@ -186,6 +189,7 @@
 				85C15479223C1DF0007AB77A /* EmojiArtView+Gestures.swift in Sources */,
 				85C15477223BF297007AB77A /* EmojiCollectionViewCell.swift in Sources */,
 				85EA3C12223972CD00A20D6B /* EmojiArtViewController.swift in Sources */,
+				8589C6A32242630600EA1FFE /* TextFieldCollectionViewCell.swift in Sources */,
 				85EA3C162239761E00A20D6B /* Utilities.swift in Sources */,
 				85EA3C1822398D6B00A20D6B /* EmojiArtDocumentTableViewController.swift in Sources */,
 				85EA3C142239735A00A20D6B /* EmojiArtView.swift in Sources */,
